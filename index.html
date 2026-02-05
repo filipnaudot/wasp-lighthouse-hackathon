@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WASP Lighthouse Hackathon</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#top" aria-label="WASP Lighthouse Hackathon home">WASP Lighthouse Hackathon</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#prizes">Prizes</a>
+        <a href="#faq">FAQ</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">March 13-15 · 48 hours · In-person</p>
+        <h1>WASP Lighthouse Hackathon</h1>
+        <div class="hero-actions">
+          <a class="btn primary" href="#">Register</a>
+          <a class="btn ghost" href="https://discord.gg/V5tErZhDaN" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord (opens in a new tab)">Join Discord</a>
+        </div>
+        <p class="hero-note">Teams of 1-4</p>
+      </div>
+      <div class="hero-terminal" aria-hidden="true">
+        <div class="scanline"></div>
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">lighthouse://session</span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line">> initializing teams...</p>
+          <p class="terminal-line">> syncing ideas...</p>
+          <p class="terminal-line">> pushing commits...</p>
+          <p class="terminal-line">> compiling demos...</p>
+          <p class="terminal-line">> ready.</p>
+          <p class="terminal-rotate" id="terminalRotate">> initializing teams...</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-header">
+        <h2>About</h2>
+        <p>The WASP Lighthouse Hackathon is a 48-hour sprint where builders and designers turn ideas into demos.</p>
+      </div>
+      <div class="about-copy">
+        <p>We welcome students, PhDs, and Post docs currently studying at the Computer Science Deparment at Umeå University.</p>
+        <p>Whether you are coding your first app or shipping your tenth prototype, you will find a team and a track to match your pace.</p>
+        <p>Bring your laptop and curiosity. We will bring the food.</p>
+      </div>
+      <!-- <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Department of Computing Science</h3>
+          <p>We welcome students, PhDs, and Post docs currently studying at the Computer Science Deparment at Umeå University.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Mentors</h3>
+          <p>On-call experts across product, design, and engineering.</p>
+        </article>
+        <article class="feature-card">
+          <h3>APIs & Credits</h3>
+          <p>Credits for AI inference will be provided.</p>
+        </article>
+      </div> -->
+    </section>
+
+    <section id="schedule" class="section schedule">
+      <div class="section-header">
+        <h2>Schedule</h2>
+      </div>
+      <p class="eyebrow">March 13-15 · 48 hours · In-person</p>
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <h3>Day 1 · Friday</h3>
+          <ul>
+            <li><span>17:00 PM</span> Kickoff & opening remarks</li>
+            <li><span>17:30 AM</span> Team formation</li>
+          </ul>
+        </div>
+        <div class="schedule-card">
+          <h3>Day 2 · Saturday</h3>
+          <ul>
+            <li><span>08:00</span> Coffee </li>
+            <li><span>08:30</span> Hacking begins</li>
+            <li><span>12:00</span> Lunch</li>
+            <li><span>13:00</span> Hacking</li>
+            <li><span>17:00</span> Dinner</li>
+            <li><span>18:00</span> Hacking</li>
+            <li><span>21:00</span> End of day</li>
+          </ul>
+        </div>
+        <div class="schedule-card">
+          <h3>Day 3 · Sunday</h3>
+          <ul>
+            <li><span>08:00</span> Coffee </li>
+            <li><span>08:30</span> Hacking</li>
+            <li><span>13:00</span> Demos</li>
+            <li><span>15:00</span> Awards + closing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="prizes" class="section prizes">
+      <div class="section-header">
+        <h2>Prizes</h2>
+      </div>
+      <div class="prize-grid">
+        <article class="prize-card">
+          <h3>1st Place</h3>
+          <p class="prize-amount">TBD + Demo spotlight</p>
+        </article>
+        <article class="prize-card">
+          <h3>2nd Place</h3>
+          <p class="prize-amount">TBD</p>
+        </article>
+        <article class="prize-card">
+          <h3>3rd Place</h3>
+          <p class="prize-amount">TBD</p>
+        </article>
+        <br>
+        <article class="prize-card minor">
+          <h3>Best Design</h3>
+          <p class="prize-amount">TBD</p>
+        </article>
+        <article class="prize-card minor">
+          <h3>Best Use of llmSHAP</h3>
+          <p class="prize-amount">SEK 1000</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="section-header">
+        <h2>FAQ</h2>
+        <p>Everything you need to know before pulling the all-nighter.</p>
+      </div>
+      <div class="accordion" role="presentation">
+        <button class="accordion-item" aria-expanded="false">
+          <span>Who can participate?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel" role="region">
+          <p>We welcome students, PhDs, and Post docs currently studying at the Computer Science Deparment at Umeå University.</p>
+        </div>
+
+        <button class="accordion-item" aria-expanded="false">
+          <span>Do I need a team?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel" role="region">
+          <p>Nope. If you do not have a team we'll help you find collaborators.</p>
+        </div>
+
+        <button class="accordion-item" aria-expanded="false">
+          <span>What should I bring?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel" role="region">
+          <p>Laptop and charger. We provide meals.</p>
+        </div>
+
+        <button class="accordion-item" aria-expanded="false">
+          <span>Is there a code of conduct?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel" role="region">
+          <p>Yes. We expect everyone to be respectful and collaborative. Read the <a href="#code-of-conduct">code of conduct</a> below.</p>
+        </div>
+
+        <button class="accordion-item" aria-expanded="false">
+          <span>How does judging work?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel" role="region">
+          <p>Judges score projects on impact, creativity, and execution. Demos are 3 minutes each.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section sponsors">
+      <div class="section-header">
+        <h2>Sponsors</h2>
+      </div>
+      <div class="sponsor-grid">
+        <div class="sponsor-card">??</div>
+        <div class="sponsor-card">WASP Lighthouse</div>
+        <div class="sponsor-card">??</div>
+      </div>
+    </section>
+
+    <section id="code-of-conduct" class="section code-of-conduct">
+      <div class="section-header">
+        <h2>Code of Conduct</h2>
+        <p>Be kind, be inclusive, and help others learn.</p>
+      </div>
+      <div class="code-of-conduct-card">
+        <p>We are committed to a safe and welcoming environment for everyone. If you experience or witness unacceptable behavior, reach out to organizers immediately.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://wasp-sweden.org/">WASP</a>
+      <a href="https://www.linkedin.com/company/umu-cs/posts/?feedView=all">LinkedIn</a>
+    </div>
+    <p>2026 WASP Lighthouse Hackathon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
