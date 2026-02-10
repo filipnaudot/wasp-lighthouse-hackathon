@@ -1,5 +1,5 @@
 const terminalLines = [
-  "> initializing teams..",
+  "> initializing teams...",
   "> syncing ideas...",
   "> pushing commits...",
   "> compiling demos...",
@@ -52,53 +52,6 @@ accordionItems.forEach((item) => {
     }
   });
 });
-
-const registerForm = document.getElementById("registerForm");
-const formMessage = document.getElementById("formMessage");
-
-function loadRegistrations() {
-  try {
-    return JSON.parse(localStorage.getItem("nightshift_registrations")) || [];
-  } catch (error) {
-    return [];
-  }
-}
-
-function saveRegistration(data) {
-  const current = loadRegistrations();
-  current.push(data);
-  localStorage.setItem("nightshift_registrations", JSON.stringify(current));
-}
-
-if (registerForm) {
-  registerForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(registerForm);
-    const name = String(formData.get("name")).trim();
-    const email = String(formData.get("email")).trim();
-    const role = String(formData.get("role")).trim();
-    const agreed = registerForm.querySelector("#coc").checked;
-
-    if (!name || !email || !role || !agreed) {
-      formMessage.textContent = "Please complete all fields and agree to the code of conduct.";
-      formMessage.style.color = "#ff9f9f";
-      return;
-    }
-
-    const registration = {
-      name,
-      email,
-      role,
-      agreed,
-      timestamp: new Date().toISOString()
-    };
-
-    saveRegistration(registration);
-    formMessage.textContent = "You are registered! Check your inbox soon.";
-    formMessage.style.color = "var(--accent)";
-    registerForm.reset();
-  });
-}
 
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.getElementById("nav-links");
