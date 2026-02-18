@@ -77,6 +77,21 @@ img {
   margin: 0;
 }
 
+.section-header p a,
+.accordion-panel a {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.section-header p a:hover,
+.section-header p a:focus,
+.accordion-panel a:hover,
+.accordion-panel a:focus {
+  color: var(--accent);
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -307,12 +322,6 @@ img {
   background: var(--bg-alt);
 }
 
-.about-copy {
-  max-width: 760px;
-  color: var(--muted);
-  margin-bottom: 32px;
-}
-
 .schedule-grid {
   display: grid;
   gap: 24px;
@@ -408,18 +417,6 @@ img {
   transition: max-height 0.2s ease;
   padding: 0 20px;
   color: var(--muted);
-}
-
-.accordion-panel a {
-  color: var(--accent-2);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.2s ease;
-}
-
-.accordion-panel a:hover,
-.accordion-panel a:focus {
-  color: var(--accent);
 }
 
 .accordion-panel.open {
