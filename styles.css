@@ -195,6 +195,17 @@ img {
   font-size: clamp(0.95rem, 2.2vw, 1.5rem);
 }
 
+.registration-deadline {
+  margin-top: -8px;
+  margin-bottom: 20px;
+  letter-spacing: 1.4px;
+  opacity: 0.86;
+}
+
+.hero .registration-deadline {
+  font-size: clamp(0.72rem, 1.5vw, 1rem);
+}
+
 .hero h1 {
   font-size: clamp(2.8rem, 5vw, 4.5rem);
   letter-spacing: 3px;
