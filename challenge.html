@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Challenge | WASP Lighthouse Hackathon</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html#top" aria-label="WASP Lighthouse Hackathon home">WASP Lighthouse Hackathon 2026</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#schedule">Schedule</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd912_YTHZufL67XXrWf1W1jubRNhx6p2M2lYPLU0WIzWEEDQ/viewform?usp=header">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section challenge">
+      <div class="section-header challenge-intro">
+        <p class="eyebrow">Challenge</p>
+        <h2>Build a PoC That Benefits Society</h2>
+        <p>
+          Build a proof-of-concept solution that leverages <a href="https://github.com/filipnaudot/llmSHAP">llmSHAP</a> or
+          <a href="https://github.com/Maelic/SGG-Benchmark">SGG-Bench</a> to solve a real-world problem.
+          You have creative freedom to tackle any challenge you want. The only requirement is that you use llmSHAP,
+          SGG-Bench, or both in your solution.
+        </p>
+      </div>
+
+      <div class="challenge-card">
+        <h3>Judging Criteria</h3>
+        <p>Projects are evaluated across two equally weighted dimensions:</p>
+        <ul>
+          <li><strong>Solution Quality (50%)</strong>: How effectively your PoC solves the chosen problem, how functional and demonstrable it is, and how meaningfully it uses llmSHAP or SGG-Bench.</li>
+          <li><strong>Real-World Applicability (50%)</strong>: How relevant the problem is today, whether the solution could be deployed in practical scenarios, and whether there is a clear path from PoC to production.</li>
+        </ul>
+      </div>
+
+      <div class="challenge-card">
+        <h3>Inspiration and Ideas</h3>
+        <p class="challenge-subheading">Consider domains where understanding LLMs matters:</p>
+        <ul>
+          <li>Healthcare: Explaining medical advice or diagnosis assistance.</li>
+          <li>Legal and compliance: Interpreting contract analysis or regulatory guidance.</li>
+          <li>Education: Understanding how AI tutors arrive at explanations.</li>
+          <li>Content moderation: Explaining why content was flagged.</li>
+          <li>Financial services: Making credit decisions or fraud detection interpretable.</li>
+          <li>Customer support: Understanding chatbot response generation.</li>
+        </ul>
+        <br>
+        <p class="challenge-subheading">Consider domains where vision-language modeling matters:</p>
+        <ul>
+          <li>Accessibility: Better scene and object descriptions for assistive tools.</li>
+          <li>Healthcare imaging workflows: Safer clinician support.</li>
+          <li>Industry and logistics: Interpreting visual inspection and anomaly reports.</li>
+        </ul>
+      </div>
+
+      <div class="challenge-card">
+        <h3>Submission Guidelines</h3>
+        <ul>
+          <li><strong>Open source</strong>: Publish your code on GitHub.</li>
+          <li><strong>Working PoC</strong>: The repository should include an implemented proof-of-concept or design.</li>
+          <li><strong>submission.md</strong>: Include a <code>submission.md</code> file in your repository with
+          a concise write-up covering the problem statement, solution approach, and how llmSHAP or SGG-Bench is
+          used, along with the practical application and expected real-world impact.</li>
+        </ul>
+      </div>
+
+      <div class="challenge-card">
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>Start simple: Pick a focused problem you can realistically solve or design in a weekend.</li>
+          <li>Think users, not features: Be explicit about who benefits and how.</li>
+          <li>Show, do not tell: A working demo is better than a perfect pitch.</li>
+          <li>Answer the “so what?”: Explain why your solution matters for your use case.</li>
+          <li>Be realistic: Prioritize current, practical problems over hypothetical ones.</li>
+        </ul>
+      </div>
+
+      <div class="challenge-card">
+        <h3>Rules</h3>
+        <ul>
+          <li>Use llmSHAP or SGG-Bench as a core component or add-on.</li>
+          <li>Build something that works well enough to demonstrate.</li>
+          <li>You can use any programming language, framework, or additional tooling.</li>
+          <li>Individual and team submissions are accepted.</li>
+        </ul>
+      </div>
+
+      <div class="challenge-card">
+        <h3>Resources</h3>
+        <p>Support is available on <a href="https://discord.gg/V5tErZhDaN" target="_blank" rel="noopener noreferrer">Discord</a>.</p>
+        <p class="challenge-outro">The strongest submissions will not just run; they will show why interpretable AI matters for real people and real decisions.</p>
+      </div>
+
+      <a class="btn ghost" href="index.html#about">Back to About</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://wasp-sweden.org/">WASP</a>
+      <a href="https://www.linkedin.com/company/umu-cs/posts/?feedView=all">LinkedIn</a>
+    </div>
+    <p>2026 WASP Lighthouse Hackathon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

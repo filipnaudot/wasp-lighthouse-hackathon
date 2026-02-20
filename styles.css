@@ -77,6 +77,14 @@ img {
   margin: 0;
 }
 
+.section-header .about-subheading {
+  color: var(--muted);
+  font-size: clamp(1.04rem, 1.45vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin: 2px 0 14px;
+}
+
 .section-header p a,
 .accordion-panel a {
   color: var(--accent-2);
@@ -331,6 +339,70 @@ img {
 
 .about {
   background: var(--bg-alt);
+}
+
+.challenge-intro {
+  max-width: 760px;
+}
+
+.challenge-intro .eyebrow {
+  margin: 0 0 10px;
+}
+
+.challenge {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.challenge-card {
+  max-width: 760px;
+  padding: 24px;
+  margin-bottom: 18px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--surface);
+}
+
+.challenge-card h3 {
+  margin: 0 0 10px;
+  letter-spacing: 0.6px;
+}
+
+.challenge-card p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.challenge-card .challenge-subheading {
+  font-size: clamp(1.02rem, 1.4vw, 1.16rem);
+  font-weight: 600;
+  color: var(--text);
+  margin: 4px 0 10px;
+}
+
+.challenge-card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.challenge-card li + li {
+  margin-top: 8px;
+}
+
+.challenge-card a {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.challenge-card a:hover,
+.challenge-card a:focus {
+  color: var(--accent);
+}
+
+.challenge-outro {
+  margin-top: 10px;
 }
 
 .schedule-grid {
